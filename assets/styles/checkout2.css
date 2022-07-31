@@ -1,0 +1,120 @@
+:root {
+  --app-background-color: #aebfbe;
+  --app-main-background-color-light: #fff;
+  --app-main-background-color-dark: #e0f2f1;
+  --app-secondary-color-light: #484848;
+  --app-secondary-color-dark: #0d0101;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&family=Playfair+Display&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Playfair Display", serif;
+}
+
+body {
+  background-image: linear-gradient(
+    var(--app-background-color),
+    var(--app-main-background-color-light)
+  );
+  max-width: 100%;
+  /*width: 100vw;*/
+  min-height: 100vh;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  background: var(--app-main-background-color-light);
+  max-width: 800px;
+  min-height: 500px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 0.5rem 1.5rem;
+  border-radius: 6px;
+}
+
+.left {
+  flex-basis: 50%;
+}
+.right {
+  flex-basis: 50%;
+}
+
+form {
+  padding: 1rem;
+  color: var(--app-secondary-color-light);
+  display: grid;
+}
+
+h3 {
+  margin-top: 1rem;
+  color: var(--app-secondary-color-light);
+  display: grid;
+}
+
+option {
+  color: var(--app-secondary-color-light);
+}
+
+form input[type="text"] {
+  width: 100%;
+  padding: 0.5rem 0.7rem;
+  margin: 0.5rem 0;
+  outline: none;
+}
+
+#state {
+  display: flex;
+  margin-top: 0.5rem;
+  align-items: flex-start;
+}
+
+#one {
+  margin-left: 0.5rem;
+}
+
+#state select {
+  padding: 0.5rem 0.7rem;
+}
+
+#state input[type="number"] {
+  padding: 0.5rem 0.7rem;
+}
+
+#state input[type="tel"] {
+  padding: 0.5rem 0.7rem;
+}
+
+button {
+  width: 80%;
+  padding: 0.7rem 1.5rem;
+  background: var(--app-secondary-color-light);
+  color: white;
+  border: none;
+  outline: none;
+  margin-top: 1rem;
+  cursor: pointer;
+  margin-left: 10%;
+  border-radius: 7px;
+}
+
+button:hover {
+  background: var(--app-secondary-color-dark);
+}
+
+@media only screen and (max-width: 700px) {
+  .container {
+    flex-direction: column;
+  }
+  body {
+    overflow-x: hidden;
+  }
+}
