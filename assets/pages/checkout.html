@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#aebfbe" />
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#aebfbe" />
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#aebfbe" />
+    <link rel="stylesheet" href="/assets/styles/checkout.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>GoDev e-comerce</title>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">HackaDev Commerce</div>
+      <input type="checkbox" id="click" />
+      <label for="click" class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <ul>
+        <li><a href="/index.html">INCIO</a></li>
+        <li><a href="#">FEMININO</a></li>
+        <li><a href="#">MASCULINO</a></li>
+        <li><a href="#">CARRINHO</a></li>
+        <li><a href="./login.html">LOGIN</a></li>
+      </ul>
+    </nav>
+    <div class="main-component">
+      <div class="lines-container">
+        <div class="line-items line-header line-clean">
+          <div><h2>Revise e confirme sua compra</h2></div>
+        </div>
+        <div class="line-items">
+          <div class="line-icons">
+            <i class="fa-solid fa-location-dot"></i>
+          </div>
+          <div class="line-content">
+            <p class="line-p-title">Endereço</p>
+            <p class="line-p-content">
+              Av. T-9, 3874 - Vila Bela, Goiânia - GO CEP 74310-320 <br />
+              Pedro Lima - (62)3243-6000
+            </p>
+          </div>
+          <div class="line-link">
+            <a href="/assets/pages/dadosPessoais.html">Alterar ou Modificar</a>
+          </div>
+        </div>
+        <div class="line-items">
+          <div class="line-icons">
+            <i class="fa-solid fa-truck-plane"></i>
+          </div>
+          <div class="line-content">
+            <p class="line-p-title">Envio Grátis</p>
+          </div>
+          <div class="line-link"><a href="#">Alterar ou Modificar</a></div>
+        </div>
+        <div class="line-items">
+          <div class="line-icons">
+            <i class="fa-solid fa-barcode"></i>
+          </div>
+          <div class="line-content">
+            <p class="line-p-title">Boleto</p>
+            <p class="line-p-boleto">
+              O boleto tem prazo de compensação de 1 a 2 dias úteis. Não
+              reservamos estoque até que o pagamento seja aprovado.
+            </p>
+          </div>
+          <div class="line-link">
+            <a href="/assets/pages/payment.html">Alterar ou Modificar</a>
+          </div>
+        </div>
+        <div class="line-items">
+          <div class="line-icons">
+            <i class="fa-solid fa-receipt"></i>
+          </div>
+          <div class="line-content">
+            <p class="line-p-title">Dados para a sua Nota Fiscal eletrônica</p>
+            <p class="line-p-content">Pedro Lima - 123.456.789-00</p>
+          </div>
+          <div class="line-link"><a href="#">Alterar ou Modificar</a></div>
+        </div>
+      </div>
+      <div class="product-show-container">
+        <div class="line-items line-clean line-products-photo">
+          <div class="photo-product"></div>
+        </div>
+        <div class="line-items line-clean">
+          <div class="line-content line-description">
+            <p class="line-p-title">Teste Roupa</p>
+            <p class="line-p-content">Cor: Branco - Quantidade: 1</p>
+            <br />
+            <hr />
+            <br />
+            <p class="line-p-title line-p-product-left">Produto</p>
+            <p class="line-p-title line-p-product-right">R$ 525,50</p>
+          </div>
+        </div>
+        <div class="line-items line-clean">
+          <div class="line-content line-description">
+            <p class="line-p-title line-p-product-left">Frete</p>
+            <p class="line-p-title line-p-product-right">Grátis</p>
+            <br />
+            <br />
+            <hr />
+            <br />
+            <p class="line-p-total-left">Você Pagará</p>
+            <p class="line-p-total-right">R$ 525,50</p>
+          </div>
+        </div>
+        <div class="line-items line-clean">
+          <div class="my-button">Confirmar compra</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/4f29c979e2.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

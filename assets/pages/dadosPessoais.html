@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#aebfbe" />
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#aebfbe" />
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#aebfbe" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="/assets/styles/checkout.css" />
+    <title>Cadastro</title>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">HackaDev Commerce</div>
+      <input type="checkbox" id="click" />
+      <label for="click" class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <ul>
+        <li><a href="/index.html">INCIO</a></li>
+        <li><a href="#">FEMININO</a></li>
+        <li><a href="#">MASCULINO</a></li>
+        <li><a href="#">CARRINHO</a></li>
+        <li><a href="./login.html">LOGIN</a></li>
+      </ul>
+    </nav>
+    <header>
+      <div class="container">
+        <div class="left">
+          <h3>Dados pessoais</h3>
+          <form>
+            Nome
+            <input type="text" name="" placeholder="Nome completo" />
+            CPF
+            <input type="text" name="" placeholder="Digite seu CPF" />
+            E-mail
+            <input type="text" name="" placeholder="Digite seu e-mail" />
+            Endereço
+            <input type="text" name="" placeholder="Digite seu endereço" />
+            Cidade
+            <input type="text" name="" placeholder="Selecione a cidade" />
+            <div id="state">
+              <label>
+                CEP
+                <input type="number" name="" placeholder="Digite o CEP" />
+                Telefone
+                <input type="tel" name="" placeholder="Digite o telefone" />
+              </label>
+
+              <label id="one">
+                Estado
+                <select>
+                  <option>Selecione o Estado</option>
+                  <option>AC</option>
+                  <option>AL</option>
+                  <option>AP</option>
+                  <option>AM</option>
+                  <option>BA</option>
+                  <option>CE</option>
+                  <option>DF</option>
+                  <option>ES</option>
+                  <option>GO</option>
+                  <option>MA</option>
+                  <option>MT</option>
+                  <option>MS</option>
+                  <option>MG</option>
+                  <option>PA</option>
+                  <option>PB</option>
+                  <option>PR</option>
+                  <option>PE</option>
+                  <option>PI</option>
+                  <option>RJ</option>
+                  <option>RN</option>
+                  <option>RS</option>
+                  <option>RO</option>
+                  <option>RR</option>
+                  <option>SC</option>
+                  <option>SP</option>
+                  <option>SE</option>
+                  <option>TO</option>
+                </select>
+              </label>
+            </div>
+          </form>
+        </div>
+        <div class="right">
+          <h3>Endereço para entrega</h3>
+          <form>
+            Nome
+            <input type="text" name="" placeholder="Nome completo" />
+            Endereço
+            <input
+              type="text"
+              name=""
+              placeholder="Digite o endereço para entrega"
+            />
+            Cidade
+            <input
+              type="text"
+              name=""
+              placeholder="Digite a cidade para entrega"
+            />
+            <div id="state">
+              <label for="CEP">
+                CEP
+                <input type="number" name="" placeholder="Digite o CEP" />
+              </label>
+              <label id="one">
+                Estado
+                <select>
+                  <option>Selecione o Estado</option>
+                  <option>AC</option>
+                  <option>AL</option>
+                  <option>AP</option>
+                  <option>AM</option>
+                  <option>BA</option>
+                  <option>CE</option>
+                  <option>DF</option>
+                  <option>ES</option>
+                  <option>GO</option>
+                  <option>MA</option>
+                  <option>MT</option>
+                  <option>MS</option>
+                  <option>MG</option>
+                  <option>PA</option>
+                  <option>PB</option>
+                  <option>PR</option>
+                  <option>PE</option>
+                  <option>PI</option>
+                  <option>RJ</option>
+                  <option>RN</option>
+                  <option>RS</option>
+                  <option>RO</option>
+                  <option>RR</option>
+                  <option>SC</option>
+                  <option>SP</option>
+                  <option>SE</option>
+                  <option>TO</option>
+                </select>
+              </label>
+            </div>
+          </form>
+          <button>Utilizar endereço cadastrado</button>
+          <a href="/assets/pages/payment.html"
+            ><button>Ir para Pagameto</button></a
+          >
+        </div>
+      </div>
+    </header>
+    <script
+      src="https://kit.fontawesome.com/4f29c979e2.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

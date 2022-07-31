@@ -1,0 +1,279 @@
+/* Cores a definir no tema */
+:root {
+  --app-background-color: #64b5f6; /* #aebfbe; */
+  --app-main-background-color-light: #fff;
+  --app-main-background-color-dark: #b3e5fc; /* #e0f2f1; */
+  --app-secondary-color-light: #484848;
+}
+
+#cartoes {
+  height: 75px;
+  width: 340px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+@import url("https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&family=Playfair+Display&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Playfair Display", serif;
+}
+
+nav {
+  display: flex;
+  height: 50px;
+  width: 100%;
+  background: #1b1b1b;
+  align-items: center;
+  justify-content: space-between;
+
+  flex-wrap: wrap;
+}
+nav .logo {
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+}
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+nav ul li {
+  margin: 0 5px;
+}
+nav ul li a {
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+nav ul li a.active,
+nav ul li a:hover {
+  color: #111;
+  background: #fff;
+}
+nav .menu-btn i {
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+input[type="checkbox"] {
+  display: none;
+}
+
+body {
+  background-image: linear-gradient(
+    var(--app-background-color),
+    var(--app-main-background-color-light)
+  );
+  height: 100%;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+}
+
+h2 {
+  color: var(--app-secondary-color-light);
+}
+
+.main-component {
+  display: flex;
+  align-items: center;
+  margin: 2vw;
+  background: var(--app-main-background-color-light);
+  width: 96vw;
+  height: 92vh;
+  border-radius: 6px;
+}
+
+/* ----- componente lineas na esquerda ----- */
+
+.lines-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3vh;
+  margin: 2vw;
+  width: 60%;
+  height: 70vh;
+}
+
+.line-items {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: var(--app-main-background-color-dark);
+  flex-grow: 1;
+  height: 10vh;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.line-icons {
+  width: 8%;
+  color: var(--app-secondary-color-light);
+  font-size: 2rem;
+  margin-left: 3%;
+}
+
+.line-clean {
+  background: var(--app-main-background-color-light);
+}
+
+.line-header {
+  height: fit-content;
+}
+.line-link {
+  width: 20%;
+  text-align: right;
+  font-size: 0.9rem;
+}
+
+.line-link a {
+  text-decoration: none;
+}
+
+.line-radio-btn {
+  width: 20px;
+  padding-left: 5px;
+}
+
+.line-content {
+  flex-grow: 1;
+}
+
+.line-p-title {
+  font-size: 1.1rem;
+}
+
+.line-p-content {
+  font-size: 0.9rem;
+}
+.line-p-boleto {
+  font-size: 0.8rem;
+}
+
+.line-p-product-right,
+.line-p-total-right {
+  display: inline;
+  float: right;
+}
+
+.line-p-product-left,
+.line-p-total-left {
+  display: inline;
+  float: left;
+}
+
+.line-description {
+  text-align: center;
+}
+
+.line-p-total-left {
+  font-size: 1.2rem;
+}
+
+.line-p-total-right {
+  font-size: 1.4rem;
+}
+
+.my-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  background: var(--app-secondary-color-light);
+  width: 200px;
+  height: 60px;
+  border-radius: 6px;
+  color: var(--app-main-background-color-light);
+  border: 0;
+  font-size: 1.2rem;
+}
+
+/* ----- componente lineas na direita ----- */
+
+.product-show-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3vh;
+  margin: 1vw;
+  width: 40%;
+  height: 70vh;
+  border: 1px solid;
+  border-color: var(--app-secondary-color-light);
+  border-radius: 6px;
+}
+
+.photo-product {
+  height: 150px;
+  width: 150px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  background: url("/assets/images/inicio/camiseta1.jpg") center center/cover;
+}
+
+/* ----- Variante Mobile ----- */
+
+@media (max-width: 900px) {
+  .line-icons {
+    width: 15%;
+    margin-left: 2px;
+    margin-right: 5px;
+  }
+
+  .line-link {
+    width: 25%;
+  }
+
+  .main-component {
+    flex-wrap: wrap;
+    height: calc(80vh * 1.6);
+  }
+
+  .lines-container,
+  .product-show-container {
+    row-gap: 2vw;
+    margin: 2vw;
+    height: 60vh;
+    width: 100%;
+  }
+
+  .main-component-payment {
+    flex-wrap: wrap-reverse;
+  }
+
+  .line-products-photo {
+    height: 125px;
+  }
+
+  .line-p-boleto {
+    margin-block: 5px;
+  }
+}
+
+@media (max-height: 500px) {
+  .line-items {
+    height: 25vh;
+  }
+  .main-component {
+    margin-top: 10px;
+    height: calc(100% * 3);
+  }
+  .lines-container,
+  .product-show-container {
+    height: 28%;
+    width: 100%;
+  }
+
+  .line-products-photo {
+    height: 140px;
+  }
+}

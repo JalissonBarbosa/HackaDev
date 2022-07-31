@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="../styles/login.css">
+    <link rel="stylesheet" href="../styles/botoesInputs.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">HackaDev Commerce</div>
+        <input type="checkbox" id="click" />
+        <label for="click" class="menu-btn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <ul>
+          <li><a href="/index.html">INCIO</a></li>
+          <li><a href="#">FEMININO</a></li>
+          <li><a href="#">MASCULINO</a></li>
+          <li><a href="#">CARRINHO</a></li>
+          <li><a href="#">LOGIN</a></li>
+        </ul>
+      </nav>
+    <!-- Plano de fundo -->
+    <div class="fundo">
+        <!-- Tela foi partida em dois blocos (este é o bloco A) -->
+        <!-- Contém uma imagem promocional -->
+        <div class="fundo__a">
+            <img src="../images/login/mulherSorrindo.png" alt="Promoção" class="a__promocional">
+        </div>
+        <!-- Tela foi partida em dois blocos (este é o bloco B) -->
+        <!-- Contém o formulário de preenchiemento -->
+        <div class="fundo__b">
+            <!-- Corpo do formulário e abaixo o seu título -->
+            <div class="b__formulario">
+                <div class="formulario__titulo">
+                    <h2 class="titulo__texto">Login com</h2>
+                </div>
+                <!-- Bloco dos botões de redes sociais do formulário -->
+                <div class="formulario__botoes">
+                    <!-- Facebook -->
+                    <div class="botoes__botao" id="facebook">
+                        <a href="#" class="botoes__link" id="facebook">
+                            <img src="../images/login/icones/facebook.png" alt="facebook" class="botao__imagem" id="facebook">
+                            <h4 class="botao__texto" id="facebook">Facebook</h4>
+                        </a>
+                    </div>
+                    <!-- Google -->
+                    <div class="botoes__botao" id="google">
+                        <a href="#" class="botoes__link" id="google">
+                            <img src="../images/login//icones/google.png" alt="facebook" class="botao__imagem" id="google">
+                            <h4 class="botao__texto" id="google">Google</h4>
+                        </a>
+                    </div>
+                </div>
+                <!-- Bloco com os campos de entrada de texto -->
+                <div class="formulario__campos">
+                    <div class="formulario__campo">
+                        <h5 class="campo__texto">Usuário</h3>
+                        <input type="text" placeholder="Digite seu usuário" class="campo__entrada">
+                    </div>
+                    <div class="formulario__campo">
+                        <div class="campo__textoLink">
+                            <h5 class="campo__texto">Senha</h3>
+                            <a href="recSenha.html" class="campo__link" id="esqueceu">Esqueceu?</a>
+                        </div>
+                        <input type="text" placeholder="Digite sua senha" class="campo__entrada">
+                    </div>
+                </div>
+                <!-- Botão para logar -->
+                <div class="botoes__fim" id="login">
+                    <a href="#" class="fim__link" id="login">
+                        <h3 class="link__texto">Login</h3>
+                    </a>
+                </div>
+                <!-- Link para cadastrar -->
+                <div class="formulario__cadastreSe">
+                    <h5 class="cadastreSe__texto">
+                        Ainda não se cadastrou?
+                    </h5>
+                    <a href="cadastro.html" class="campo__link" id="cadastreSe">Cadastre-se.</a>
+                </div>
+            </div> 
+        </div>    
+    </div>
+</body>
+</html>

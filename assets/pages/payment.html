@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#aebfbe" />
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#aebfbe" />
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#aebfbe" />
+    <link rel="stylesheet" href="/assets/styles/checkout.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <title>GoDev e-comerce</title>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">HackaDev Commerce</div>
+      <input type="checkbox" id="click" />
+      <label for="click" class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <ul>
+        <li><a href="/index.html">INCIO</a></li>
+        <li><a href="#">FEMININO</a></li>
+        <li><a href="#">MASCULINO</a></li>
+        <li><a href="#">CARRINHO</a></li>
+        <li><a href="./login.html">LOGIN</a></li>
+      </ul>
+    </nav>
+    <form action="/assets/pages/checkout.html">
+      <div class="main-component main-component-payment">
+        <div class="lines-container">
+          <div class="line-items line-header line-clean">
+            <div><h2>Escolha um método de pagamento</h2></div>
+          </div>
+          <div class="line-items">
+            <div class="line-radio-btn">
+              <input type="radio" id="pix" name="payment-method" value="" />
+            </div>
+            <div class="line-icons">
+              <i class="fa-brands fa-pix"></i>
+            </div>
+            <div class="line-content">
+              <p class="line-p-title">Pix</p>
+              <p class="line-p-content">Aprovação imediata.</p>
+            </div>
+          </div>
+          <div class="line-items">
+            <div class="line-radio-btn">
+              <input type="radio" id="pix" name="payment-method" value="" />
+            </div>
+            <div class="line-icons">
+              <i class="fa-solid fa-credit-card"></i>
+            </div>
+            <div class="line-content">
+              <p class="line-p-title">Novo cartão de crédito</p>
+              <p class="line-p-content">Até 12 vezes sem juros.</p>
+            </div>
+          </div>
+          <div class="line-items">
+            <div class="line-radio-btn">
+              <input type="radio" id="boleto" name="payment-method" value="" />
+            </div>
+            <div class="line-icons">
+              <i class="fa-solid fa-barcode"></i>
+            </div>
+            <div class="line-content">
+              <p class="line-p-title">Boleto</p>
+              <p class="line-p-content">Será aprovado em 1 ou 2 dias úteis.</p>
+            </div>
+          </div>
+          <div class="line-items">
+            <div class="line-radio-btn">
+              <input type="radio" id="pix" name="payment-method" value="" />
+            </div>
+            <div class="line-icons">
+              <i class="fa-brands fa-cc-visa"></i>
+            </div>
+            <div class="line-content">
+              <p class="line-p-title">Visa **** 1234</p>
+              <p class="line-p-content">Até 10 vezes sem juros</p>
+            </div>
+          </div>
+          <button class="my-button" type="submit">Continuar</button>
+        </div>
+        <div class="product-show-container">
+          <div class="line-items line-clean line-products-photo">
+            <div class="photo-product"></div>
+          </div>
+          <div class="line-items line-clean">
+            <div class="line-content line-description">
+              <p class="line-p-title">Moletom com capuz Paloli unissex</p>
+              <p class="line-p-content">Cor: Preto - Quantidade: 1</p>
+              <br />
+              <hr />
+              <br />
+              <p class="line-p-title line-p-product-left">Produto</p>
+              <p class="line-p-title line-p-product-right">R$ 525,50</p>
+            </div>
+          </div>
+          <div class="line-items line-clean line-bottom">
+            <div class="line-content line-description">
+              <p class="line-p-title line-p-product-left">Frete</p>
+              <p class="line-p-title line-p-product-right">Grátis</p>
+              <br />
+              <br />
+              <hr />
+              <br />
+              <p class="line-p-total-left">Você Pagará</p>
+              <p class="line-p-total-right">R$ 525,50</p>
+            </div>
+          </div>
+          <div class="line-items line-clean">
+            <img
+              id="cartoes"
+              src="/assets/images/checkout/cartoes.png"
+              alt="Cartões"
+            />
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/4f29c979e2.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
