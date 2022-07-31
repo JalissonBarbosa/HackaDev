@@ -6,7 +6,7 @@
   --borderColor: #6d768a4d;
   --buttonColor: #6d768aba;
   --larguraSacola: min(100%, 400px);
-  --areaCabecalhoSacola: 45px;
+  --alturaCabecalho: 45px;
   --alturaFinalizarCompra: 50px;
 }
 
@@ -17,54 +17,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Playfair Display", serif;
-}
-
-nav {
-  display: flex;
-  height: 50px;
-  width: 100%;
-  background: #1b1b1b;
-  align-items: center;
-  justify-content: space-between;
-
-  flex-wrap: wrap;
-}
-nav .logo {
-  color: #fff;
-  font-size: 35px;
-  font-weight: 600;
-}
-nav ul {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-}
-nav ul li {
-  margin: 0 5px;
-}
-nav ul li a {
-  color: #f2f2f2;
-  text-decoration: none;
-  font-size: 18px;
-  font-weight: 500;
-  padding: 8px 15px;
-  border-radius: 5px;
-  letter-spacing: 1px;
-  transition: all 0.3s ease;
-}
-nav ul li a.active,
-nav ul li a:hover {
-  color: #111;
-  background: #fff;
-}
-nav .menu-btn i {
-  color: #fff;
-  font-size: 22px;
-  cursor: pointer;
-  display: none;
-}
-input[type="checkbox"] {
-  display: none;
 }
 
 body {
@@ -82,7 +34,15 @@ button {
   border: 0;
   cursor: pointer;
 }
+main{
+  height: 100vh;
+  display: flex;
+  margin-left: 5%;
+  align-items: center;
+  color: var(--corPrimaria);
+}
 #sacola {
+  display: flex;
   position: fixed;
   top: 0;
   width: 100vw;
@@ -93,7 +53,7 @@ button {
   padding: 0;
 }
 #sacola.visivel {
-  display: flex;
+ /*dysplay flex era aqui*/
 }
 
 .areaSacola {
@@ -105,14 +65,14 @@ button {
   flex-direction: column;
   overflow: overlay;
   padding-bottom: var(--alturaFinalizarCompra);
-  padding-top: var(--areaCabecalhoSacola);
+  padding-top: var(--alturaCabecalho);
 }
 #sacola.vazia .areaSacola {
   justify-content: center;
 }
 .cabecalhoSacola {
   width: var(--larguraSacola);
-  height: var(--areaCabecalhoSacola);
+  height: var(--alturaCabecalho);
   display: flex;
   justify-content: space-between;
   align-items: center;
