@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/cards.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <title>HackaDev Commerce</title>
+  </head>
+  <body>
+    <!--Navbar-->
+    <nav class="nav">
+      <input type="checkbox" id="nav__checkbox" class="nav__checkbox" />
+      <label for="nav__checkbox" class="nav__toggle">
+        <svg class="menu" viewBox="0 0 448 512" width="100" title="bars">
+          <path
+            d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
+          />
+        </svg>
+        <svg class="close" viewBox="0 0 384 512" width="100" title="times">
+          <path
+            d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
+          />
+        </svg>
+      </label>
+      <ul class="nav__menu">
+        <li>
+          <a href="#">
+            <h2>HackaDev Commerce</h2>
+          </a>
+        </li>
+        <li><a href="../../index.html">INCIO</a></li>
+
+        <li><a href="./sacola.html">CARRINHO</a></li>
+        <li><a href="./login.html">LOGIN</a></li>
+      </ul>
+    </nav>
+    <!--Begin of Container-->
+    <section>
+      <div class="content">
+          <div class="imagens">
+              <input type="radio" name="imagem" id="slide1" checked>
+              <input type="radio" name="imagem" id="slide2">
+  
+              <div class="slide s1">
+                  <img src="/assets/images/cards/imagem-jaqueta-1.jpg">
+              </div>
+  
+              <div class="slide">
+                  <img src="/assets/images/cards/imagem-jaqueta-2.jpg">
+              </div>
+  
+          </div>  
+              
+          <div class="navigation">
+              <label class="esfera" for="slide1"></label>
+              <label class="esfera" for="slide2"></label>
+          </div>
+      </div>
+      <!--Nome produto-->
+      <div class="detalhes">
+          <h1>Casaco Feminino com Capuz Polivelour vermelho</h1>
+          <div class="estrelas">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+          </div>
+              <small>Promoção!</small>
+              <s>R$199,99</s>
+              <h2>R$169,99</h2>
+          <select>
+              <option>Tamanho</option>
+              <option>PP</option>
+              <option>P</option>
+              <option>M</option>
+              <option>G</option>
+              <option>GG</option>
+          </select>
+  
+          <select>
+              <option>Cor</option>
+              <option>Vermelho</option>
+              <option>Preto</option>
+          </select>
+          <br>
+          <!--<input type="number" value="1">-->
+          <a href="./sacola.html" class="btn">Adicionar item à sacola</a>
+          <h3>Detalhes do produto:</h3>
+      
+          <div class="info">
+              <p>Fique ainda mais quentinha e estilosa com o Casaco Feminino com Capuz Polivelour. A peça é perfeita para dias mais gelados, e ainda conta com capuz e bolsos frontais.</p>
+              <h4>Características:</h4>
+                  <ol>
+                      <li>Confeccionado em tecido polivelour</li>
+                      <li>Forro interno</li>
+                      <li>Com capuz</li>
+                      <li>Mangas longas</li>
+                      <li>Fechamento frontal por zíper e botão</li>
+                      <li>Bolsos frontais</li>
+                  </ol>
+              </div>
+          </section>
+          
+      
+    <!--End of container-->
+    <!-- Start Footer -->
+    <div class="footer">
+      <div>Projeto HackaDev de Ecommerce by: Imã learning!</div>
+      <div class="footer-names">
+        <div>
+          <p>
+            <br />
+            Equipe: <br />
+            Jalisson Barbosa <br />
+            Amanda Silva <br />
+            Jorge Linero <br />
+            Fernando Jose <br />
+            Werick Lima <br />
+            Igor Leandro <br />
+            Bruno Arruda <br />
+          </p>
+        </div>
+        <div><br /></div>
+        <div>
+          <span>
+            <iframe
+              id="location"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3820.841174151181!2d-49.29670994901682!3d-16.73477475118769!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ef75afb275741%3A0x2f443cabfaedf815!2sIm%C3%A3%20Learning%20Place!5e0!3m2!1spt-PT!2sbr!4v1659192203899!5m2!1spt-PT!2sbr"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe
+          ></span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-end">
+      <p class="text-left text-light">Copyright &copy; HackaDev GoDev 2022</p>
+    </div>
+    <!-- End Footer -->
+    <!--Font Awesoame-->
+    <script src="https://kit.fontawesome.com/659ffd5452.js" crossorigin="anonymous"></script> 
+    <!-- Font Awesome -->
+    
+  </body>
+</html>

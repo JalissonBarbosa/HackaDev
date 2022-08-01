@@ -1,0 +1,330 @@
+@charset "utf-8";
+:root {
+  --corPrimaria: #d6685a;
+  --corSecundaria: #1c1c1c;
+  --whiteColor: #eff3f8;
+  --borderColor: #6d768a4d;
+  --buttonColor: #6d768aba;
+  --larguraSacola: min(100%, 400px);
+  --areaCabecalhoSacola: 45px;
+  --alturaFinalizarCompra: 50px;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&family=Playfair+Display&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Playfair Display", serif;
+}
+
+nav {
+  display: flex;
+  height: 50px;
+  width: 100%;
+  background: #1b1b1b;
+  align-items: center;
+  justify-content: space-between;
+
+  flex-wrap: wrap;
+}
+nav .logo {
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+}
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+nav ul li {
+  margin: 0 5px;
+}
+nav ul li a {
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+nav ul li a.active,
+nav ul li a:hover {
+  color: #111;
+  background: #fff;
+}
+nav .menu-btn i {
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+input[type="checkbox"] {
+  display: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  width: 100vw;
+  height: 100vh;
+  overflow: overlay;
+}
+body.fixed {
+  overflow: hidden;
+}
+
+button {
+  background-color: unset;
+  border: 0;
+  cursor: pointer;
+}
+#sacola {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #0000007b;
+  justify-content: end;
+  font-size: 14px;
+  padding: 0;
+}
+#sacola.visivel {
+  display: flex;
+}
+
+.areaSacola {
+  width: var(--larguraSacola);
+  height: 100vh;
+  background-color: var(--whiteColor);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  overflow: overlay;
+  padding-bottom: var(--alturaFinalizarCompra);
+  padding-top: var(--areaCabecalhoSacola);
+}
+#sacola.vazia .areaSacola {
+  justify-content: center;
+}
+.cabecalhoSacola {
+  width: var(--larguraSacola);
+  height: var(--areaCabecalhoSacola);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 30px;
+  position: fixed;
+  top: 0;
+  background-color: var(--whiteColor);
+  border-bottom: 1px solid var(--borderColor);
+}
+.cabecalhoSacola button {
+  width: 25px;
+  height: 25px;
+  visibility: visible;
+}
+#sacola.vazia #limparSacola {
+  visibility: hidden;
+}
+.cabecalhoSacola svg {
+  height: 20px;
+  fill: #211d1d6b;
+}
+.cabecalhoSacola h3 {
+  font-weight: 500;
+  flex: 1;
+  text-align: center;
+  font-size: 20px;
+  text-shadow: 1px 1px 2px rgba(29, 29, 29, 0.226);
+}
+.conteudoSacolaVazia {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  font-size: 20px;
+  flex-wrap: wrap;
+  text-align: center;
+  margin-top: 10%;
+}
+.sacolaIcone {
+  width: 85px;
+  color: var(--corSecundaria);
+}
+button#voltarCompras {
+  background-color: var(--corSecundaria);
+  color: var(--whiteColor);
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 300;
+  margin-top: 30%;
+}
+#sacola.vazia .conteudoSacolaVazia {
+  display: flex;
+}
+#sacola.vazia .conteudoSacola,
+#sacola.vazia .finalizarCompra {
+  display: none;
+}
+
+/*Sacola com produtos*/
+.conteudoSacola {
+  width: 90%;
+}
+.itemSacola {
+  width: 100%;
+  display: flex;
+  min-height: 150px;
+  border: 1px solid var(--borderColor);
+  border-radius: 5px;
+  margin-block: 5px;
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.203);
+}
+.imagemProduto {
+  border-radius: 3px 0 0 3px;
+  max-width: 140px;
+}
+.dadosProduto {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 12px;
+}
+#nomeProduto {
+  font-size: 16px;
+  font-weight: 500;
+  text-shadow: 1px 1px 1px rgba(36, 36, 36, 0.177);
+}
+.infoProdutos {
+  display: grid;
+  grid-template-areas: "A B" "C D";
+  gap: 15%;
+  flex: 1;
+  padding-block: 10px;
+  color: #6d768ad2;
+}
+.tamanhoPeca {
+  grid-area: A;
+  align-self: center;
+}
+.tamanhoPeca span {
+  color: #1c1c1c;
+}
+.corPeca {
+  grid-area: C;
+  align-self: center;
+  display: flex;
+  gap: 5px;
+}
+span.corProduto {
+  align-self: center;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--corPrimaria);
+  border: 1px solid var(--borderColor);
+}
+#botoesQuantidade {
+  grid-area: B;
+  display: flex;
+}
+#botaoQuantidade {
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  font-size: 18px;
+  border-radius: 50%;
+  border: 1px solid var(--corSecundaria);
+  color: var(--corSecundaria);
+}
+#botaoQuantidade svg {
+  width: 10px;
+  height: 10px;
+}
+#botaoQuantidade.menos {
+  fill: #6d768ad2;
+  border-color: #6d768ad2;
+}
+#quantidade {
+  padding-inline: 10px;
+  text-align: center;
+  align-self: center;
+  color: var(--corSecundaria);
+  font-weight: 500;
+}
+#precoUnitario {
+  grid-area: D;
+  align-self: center;
+  color: var(--corPrimaria);
+  font-weight: 700;
+  line-height: 1.5;
+}
+#botoesConfigura {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+#botoesConfigura button {
+  flex: 1;
+  height: 30px;
+  background-color: var(--whiteColor);
+  border: 1px solid var(--buttonColor);
+  font-size: 13px;
+  border-radius: 3px;
+}
+.finalizarCompra {
+  width: var(--larguraSacola);
+  height: var(--alturaFinalizarCompra);
+  background-color: var(--whiteColor);
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.areaValorParcial {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+#valor {
+  line-height: 1.5;
+  font-size: 15px;
+  font-weight: 700;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.226);
+}
+.finalizarCompra a {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+#botaoFinalizarCompra {
+  width: 100%;
+  height: var(--alturaFinalizarCompra);
+  align-self: flex-end;
+  border: none;
+  border-radius: 10px 0 0 0;
+  background-color: var(--corPrimaria);
+  color: var(--whiteColor);
+  font-size: 15px;
+  font-weight: 500;
+}
+@media (min-width: 400px) {
+  #botaoFinalizarCompra {
+    width: 160px;
+    height: 40px;
+    border-radius: 5px;
+  }
+}
