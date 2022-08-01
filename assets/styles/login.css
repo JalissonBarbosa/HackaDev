@@ -5,17 +5,18 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Playfair Display", serif;
+  color: rgb(86, 86, 86);
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
 }
 
 /* Plano de fundo da página */
 .fundo {
-  /* Imagem de plano de fundo foi removida para obedecer à
-  paleta de cores decidida pela equipe */
-  /* background: url("../images/login/fundo.jpg") no-repeat bottom center scroll;
-  background-position: 30% 45%;
-  background-size: cover; */
-  width: 100vw;
-  height: 90vh;
+  width: 100%;
+  height: 90%;
   display: flex;
   justify-content: center;
 }
@@ -92,12 +93,12 @@
   background-color: #3b5998;
 }
 
-.botao__texto#facebook {
+.botao__texto {
   color: white;
 }
 
 .botoes__botao#google {
-  background-color: white;
+  background-color: rgb(86, 86, 86);
 }
 
 .formulario__campos {
@@ -154,6 +155,10 @@
   justify-content: center;
 }
 
+.fim__link {
+  text-decoration: none;
+}
+
 .link__texto {
   color: white;
 }
@@ -168,23 +173,21 @@
 }
 
 @media (max-width: 720px) {
+
   .fundo__a {
     display: none;
   }
 
   .fundo__b {
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 90%;
     justify-content: center;
-    background-color: red;
   }
 
   .b__formulario {
-    max-width: none;
-    max-height: none;
     width: 100%;
     height: 100%;
-    border-radius: 0;
+    box-shadow: none;
   }
 }
 

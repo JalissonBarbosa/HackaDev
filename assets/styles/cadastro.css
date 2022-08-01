@@ -5,68 +5,20 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Playfair Display", serif;
+  color: rgb(86, 86, 86);
 }
 
-nav {
-  display: flex;
-  height: 50px;
-  width: 100%;
-  background: #1b1b1b;
-  align-items: center;
-  justify-content: space-between;
-
-  flex-wrap: wrap;
-}
-nav .logo {
-  color: #fff;
-  font-size: 35px;
-  font-weight: 600;
-}
-nav ul {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-}
-nav ul li {
-  margin: 0 5px;
-}
-nav ul li a {
-  color: #f2f2f2;
-  text-decoration: none;
-  font-size: 18px;
-  font-weight: 500;
-  padding: 8px 15px;
-  border-radius: 5px;
-  letter-spacing: 1px;
-  transition: all 0.3s ease;
-}
-nav ul li a.active,
-nav ul li a:hover {
-  color: #111;
-  background: #fff;
-}
-nav .menu-btn i {
-  color: #fff;
-  font-size: 22px;
-  cursor: pointer;
-  display: none;
-}
-input[type="checkbox"] {
-  display: none;
+body {
+  height: 100vh;
+  width: 100vw;
 }
 
 .principal--fundo {
   display: flex;
   flex-direction: row;
-  width: 100vw;
-  min-width: 200px;
-  min-height: 600px;
-  height: 100vh;
+  width: 100%;
+  height: 90%;
   color: white;
-  background: url("/assets/images/login/fundo.jpg") no-repeat bottom center
-    scroll;
-  background-position: 30% 45%;
-  background-size: cover;
   justify-content: space-around;
   align-items: center;
 }
@@ -94,21 +46,17 @@ input[type="checkbox"] {
 
 /* Bloco do formulário */
 .esquerda__formulario {
+  width: 100%;
+  max-width: 1067px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  width: 80%;
-  height: 80%;
-  min-width: 350px;
-  min-height: 640px;
-  background-color: rgb(237, 237, 237);
-  border-radius: 50px;
-  box-shadow: 0px 0px 6px 0px rgba(50, 50, 50, 0.4);
+  border-radius: 30px;
+  box-shadow: 0px 0px 16px -3px #000000;
 }
 
 .formulario__titulo {
-  width: 100%;
   color: rgb(76, 76, 76);
   font-weight: bold;
   font-size: 28px;
@@ -125,7 +73,8 @@ input[type="checkbox"] {
   justify-content: space-around;
 }
 
-.dadosGerais__bloco {
+.dadosGerais__bloco#dadosPessoais,
+.dadosGerais__bloco#endereco {
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -136,15 +85,14 @@ input[type="checkbox"] {
 .bloco__titulo {
   margin-left: 2px;
   font-size: 16px;
-  color: rgb(76, 76, 76);
   font-weight: bold;
 }
 
 .bloco__fundo {
-  width: 90%;
+  width: 100%;
   padding: 10px;
   border-radius: 10px;
-  box-shadow: 0px 0px 6px 0px rgba(255, 121, 242, 0.4);
+  min-width: 380px;
 }
 
 .bloco__item {
@@ -170,6 +118,7 @@ input[type="checkbox"] {
 }
 
 .cepMunicipioUf__subBloco {
+  width: 50%;
   display: flex;
   flex-direction: row;
   align-items: flex-end;
@@ -180,27 +129,28 @@ input[type="checkbox"] {
   flex-direction: row;
   align-items: flex-end;
   justify-content: space-between;
-  width: 95%;
+  width: 100%;
 }
 
-.dado__entrada#cep1 {
-  width: 80px;
+.cepMunicipioUf__subBloco#cep1cep2,
+.cepMunicipioUf__subBloco#municipioUf {
+  width: 48%;
 }
 
-.dado__entrada#cep2 {
-  width: 50px;
-  margin-right: 10px;
+.item__dado#cep1,
+.item__dado#municipio {
+  width: 80%;
 }
 
-.dado__entrada#uf {
-  width: 50px;
+.item__dado#cep2,
+.item__dado#uf {
+  width: 20%;
 }
 
 .dado__entrada {
   padding-left: 10px;
-  width: 95%;
   height: 50px;
-  border-radius: 10px;
+  border-radius: 30px;
   border-style: none;
   background-color: rgb(226, 226, 226);
 }
@@ -210,12 +160,11 @@ input[type="checkbox"] {
   outline: 0;
   transition: all 1s;
   transform: scale(1.03);
-  border: 1px solid #ff00c8;
+  border: 1px solid rgb(86, 86, 86);
   border-radius: 10px;
 }
 
 .formulario__confirmar {
-  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -239,12 +188,10 @@ input[type="checkbox"] {
   transform: scale(1.07);
   box-shadow: 0px 0px 6px 0px rgba(255, 121, 242, 0.4);
   background: rgb(0, 254, 255);
-  background: linear-gradient(
-    90deg,
-    rgba(0, 254, 255, 1) 0%,
-    rgba(29, 79, 253, 1) 48%,
-    rgba(255, 0, 232, 1) 100%
-  );
+  background: linear-gradient(90deg, 
+    rgba(73,73,73,1) 0%, 
+    rgba(0,0,0,1) 50%, 
+    rgba(74,74,74,1) 100%);
 }
 
 .formulario__contrato {
@@ -271,29 +218,14 @@ input[type="checkbox"] {
   color: #ff00c8;
 }
 
-@media (max-width: 873px) {
-  .principal__esquerda {
-    width: 100vw;
-    height: 100vh;
-  }
-
-  .esquerda__formulario {
-    width: 98%;
-  }
-}
-
 @media (max-width: 1075px) {
   .principal__direita {
     display: none;
   }
 
-  .esquerda__formulario {
-    border-radius: 0px;
-  }
-
   .principal__esquerda {
     width: 100vw;
-    height: 100vh;
+    height: 90%;
   }
 
   .esquerda__formulario {
@@ -305,23 +237,31 @@ input[type="checkbox"] {
   }
 
   .formulario__dadosGerais {
-    height: 60%;
-    width: 100%;
     display: flex;
     flex-direction: column;
     justify-items: center;
   }
 
-  .dadosGerais__bloco {
-    width: 99%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  .dadosGerais__bloco#dadosPessoais,
+  .dadosGerais__bloco#endereco {
+    width: 100%;
   }
+
 }
 
 @media (max-height: 848px) {
   .dado__entrada {
     height: 30px;
+  }
+}
+
+@media (max-width: 873px) {
+  .principal__esquerda {
+    width: 100%;
+    height: 90%;
+  }
+
+  .esquerda__formulario {
+    width: 100%;
   }
 }
