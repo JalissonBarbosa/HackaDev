@@ -132,17 +132,26 @@ body {
   width: 100%;
 }
 
-.cepMunicipioUf__subBloco#cep1cep2,
-.cepMunicipioUf__subBloco#municipioUf {
-  width: 48%;
+.cepMunicipioUf__subBloco#cep1cep2 {
+  width: 30%;
 }
 
-.item__dado#cep1,
+.cepMunicipioUf__subBloco#municipioUf {
+  width: 68%;
+}
+
+.item__dado#cep1 {
+  width: 60%;
+}
+
 .item__dado#municipio {
   width: 80%;
 }
 
-.item__dado#cep2,
+.item__dado#cep2 {
+  width: 40%;
+}
+
 .item__dado#uf {
   width: 20%;
 }
