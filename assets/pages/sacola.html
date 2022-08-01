@@ -4,21 +4,31 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/assets/styles/sacola.css">
+  <link rel="stylesheet" href="../styles/sacola.css">
   <title>Carrinho</title>
 </head>
 <body>
-  <main>
-    <h2>A Home Page vai ficar aqui atrás</h2>
-  </main>
+  <nav>
+    <div class="logo">HackaDev Commerce</div>
+    <input type="checkbox" id="click" />
+    <label for="click" class="menu-btn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <ul>
+      <li><a href="../../index.html">INICIO</a></li>
+      <li><a href="#">FEMININO</a></li>
+      <li><a href="#">MASCULINO</a></li>
+      <li id="carrinho"><a href="#">CARRINHO</a></li>
+      <li><a href="./login.html">LOGIN</a></li>
+    </ul>
+  </nav> 
+
    <section id="sacola">
     <div class="areaSacola">
       <div class="cabecalhoSacola">
-        <a href="/index.html">
-          <button id="fecharSacola">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><path d="M192 448c-8.188 0-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25l160-160c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25L77.25 256l137.4 137.4c12.5 12.5 12.5 32.75 0 45.25C208.4 444.9 200.2 448 192 448z"/></svg>
-          </button>
-        </a>
+        <button id="fecharSacola">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><path d="M192 448c-8.188 0-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25l160-160c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25L77.25 256l137.4 137.4c12.5 12.5 12.5 32.75 0 45.25C208.4 444.9 200.2 448 192 448z"/></svg>
+        </button>
         <h3>Minha Sacola</h3>
         <button id="limparSacola">
           <abbr title="Limpar sacola">
@@ -30,7 +40,7 @@
       <div class="conteudoSacola">
         
         <div class="itemSacola">
-          <img class="imagemProduto" src="/assets/images/sacola/roupa-teste.jpeg">
+          <img class="imagemProduto" src="../images/sacola/roupa-teste.jpeg">
           <div class="dadosProduto">
             <h4 id="nomeProduto">Nome da roupa</h4>
             <div class="infoProdutos">
@@ -55,7 +65,7 @@
           </div>
         </div>
         <div class="itemSacola">
-          <img class="imagemProduto" src="/assets/images/sacola/roupa-teste.jpeg">
+          <img class="imagemProduto" src="../images/sacola/roupa-teste.jpeg">
           <div class="dadosProduto">
             <h4 id="nomeProduto">Nome da roupa</h4>
             <div class="infoProdutos">
@@ -80,7 +90,7 @@
           </div>
         </div>
         <div class="itemSacola">
-          <img class="imagemProduto" src="/assets/images/sacola/roupa-teste.jpeg">
+          <img class="imagemProduto" src="../images/sacola/roupa-teste.jpeg">
           <div class="dadosProduto">
             <h4 id="nomeProduto">Nome da roupa</h4>
             <div class="infoProdutos">
@@ -105,7 +115,7 @@
           </div>
         </div>
         <div class="itemSacola">
-          <img class="imagemProduto" src="/assets/images/sacola/roupa-teste.jpeg">
+          <img class="imagemProduto" src="../images/sacola/roupa-teste.jpeg">
           <div class="dadosProduto">
             <h4 id="nomeProduto">Nome da roupa</h4>
             <div class="infoProdutos">
@@ -130,7 +140,7 @@
           </div>
         </div>
         <div class="itemSacola">
-          <img class="imagemProduto" src="/assets/images/sacola/roupa-teste.jpeg">
+          <img class="imagemProduto" src="../images/sacola/roupa-teste.jpeg">
           <div class="dadosProduto">
             <h4 id="nomeProduto">Nome da roupa</h4>
             <div class="infoProdutos">
@@ -155,7 +165,7 @@
           </div>
         </div>
         <div class="itemSacola">
-          <img class="imagemProduto" src="/assets/images/sacola/roupa-teste.jpeg">
+          <img class="imagemProduto" src="../images/sacola/roupa-teste.jpeg">
           <div class="dadosProduto">
             <h4 id="nomeProduto">Nome da roupa</h4>
             <div class="infoProdutos">
@@ -180,7 +190,7 @@
           </div>
         </div>
         <div class="itemSacola">
-          <img class="imagemProduto" src="/assets/images/sacola/roupa-teste.jpeg">
+          <img class="imagemProduto" src="../images/sacola/roupa-teste.jpeg">
           <div class="dadosProduto">
             <h4 id="nomeProduto">Nome da roupa</h4>
             <div class="infoProdutos">
@@ -205,7 +215,7 @@
           </div>
         </div>
         <div class="itemSacola">
-          <img class="imagemProduto" src="/assets/images/sacola/roupa-teste.jpeg">
+          <img class="imagemProduto" src="../images/sacola/roupa-teste.jpeg">
           <div class="dadosProduto">
             <h4 id="nomeProduto">Nome da roupa</h4>
             <div class="infoProdutos">
@@ -233,7 +243,7 @@
       </div>
 
       <div class="conteudoSacolaVazia">
-        <img class="sacolaIcone" src="/assets/images/sacola/free_icon_1.svg" alt="">
+        <img class="sacolaIcone" src="../images/sacola/free_icon_1.svg" alt="">
         <p>Sua sacola ainda está Vazia</p> 
         <button id="voltarCompras">VOLTAR A COMPRAR</button>
       </div>
@@ -243,7 +253,7 @@
         <div class="areaValorParcial">
           <p id="valor">R$1480.00</p>
         </div>
-      <a href="/assets/pages/checkout.html"><button id="botaoFinalizarCompra">Finalizar Compra </button></a>
+      <a href="./checkout.html"><button id="botaoFinalizarCompra">Finalizar Compra </button></a>
       </div>
     </div>
   </section>
