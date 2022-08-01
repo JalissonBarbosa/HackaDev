@@ -64,9 +64,9 @@ input[type="checkbox"] {
     0px 0px 6px 0px 
   rgba(255, 121, 242, 0.4);
   background: linear-gradient(90deg, 
-    rgba(73,73,73,1) 0%, 
-    rgba(0,0,0,1) 50%, 
-    rgba(74,74,74,1) 100%);
+  rgba(73,73,73,1) 0%, 
+  rgba(0,0,0,1) 50%, 
+  rgba(74,74,74,1) 100%);
 }
 
 .botoes__botao#google:hover {
@@ -83,7 +83,7 @@ input[type="checkbox"] {
 }
 
 .campo__entrada#recSenhaEmail:focus {
-  border-radius: 30px;
+  border-radius: 10px;
 }
 
 .campo__link:hover {
